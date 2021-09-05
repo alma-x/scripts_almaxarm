@@ -13,7 +13,9 @@ git pull
 cd /catkin_ws/src/ERC_maintenance_sim
 echo ERC_maintenance_sim
 git pull
-
+echo SCRIPTS
+cd /scripts
+git pull
 cd ../..
 
 catkin_make
