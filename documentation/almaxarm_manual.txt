@@ -1,0 +1,22 @@
+_____________________________________________________
+THIS IS THE README FILE FOR ALMA-X TEAM ARM CONTAINER
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+### COMMANDS
+
+manual		prints this page
+
+defaultbash	restores default bash configuration
+
+newbash		bash configuration with added ron ENV variables
+
+updatex		updates local repositories
+
+
+### STARTUP PROCEDURE
+
+1) 
+
+2)
+
+3)
