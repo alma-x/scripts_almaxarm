@@ -15,7 +15,7 @@ updatex		updates local repositories
 
 ### STARTUP COMMAND
 
-roslaunch ur3_control init.launch inter_arg:=2
+roslaunch ur3_control init.launch inter_arg:=1
 
 
 ### OBJECTIVE COMMANDS
@@ -36,7 +36,7 @@ roslaunch ur3_control init.launch inter_arg:=2
 
 6)	roslaunch ur3_control objective6.launch
 
-7)	roslaunch ur3_control objective7.launch input:="ID"
+7)	roslaunch ur3_control objective7.launch input:=$(rosparam get hidden_id)
 
 	SUBSTITUTE ID WITH A INTEGER NUMBER FOR EXAMPLE input:="1"
 

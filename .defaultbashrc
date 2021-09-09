@@ -78,26 +78,14 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f /scripts/.bash_aliases ]; then
+    . /scripts/.bash_aliases
 fi
-
-#----ALIASES-----
-
-alias manual="cat /scripts/documentation/almaxarm_manual.txt"
-alias newbash=/scripts/load_newbash.bash
-alias defaultbash=/scripts/load_defaultbash.bash
-alias updatex=/scripts/updatex.sh
-alias qt=/root/QtCreator/latest/bin/qtcreator
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -117,4 +105,7 @@ source /catkin_ws/devel/setup.bash
 
 #----TERMINAL STARTUP MESSAGE------
 
-echo -e "#\t##\t##\t#\nto display command window type:\n\nmanual\n#\t##\t##\t#\n"
+if [ -f /scripts/startup_message.txt ]; then
+    cat /scripts/startup_message.txt
+fi
+#echo -e "#\t##\t##\t#\nto display command window type:\n\nmanual\n#\t##\t##\t#\n"
