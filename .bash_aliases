@@ -9,7 +9,7 @@ alias l='ls -CF'
 
 # SCRIPTS
 
-
+alias bashconfigure="source $HOME/.bashrc"
 alias newbash=/scripts/load_newbash.bash
 alias defaultbash=/scripts/load_defaultbash.bash
 
